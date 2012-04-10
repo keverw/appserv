@@ -6,13 +6,6 @@ to start run `node app.js`
 
 This is built on top of express.js, connect and node.js
 
-##Redownload packages##
-
-This comes with the packages already to ensure that it will work out of the box. But if you really want to reinstall/download use the following, also it would be best to make a backup before doing this just to be safe.
-
-	npm install express
-	npm install ejs
-
 ##Static file server##
 
 `public_files` holds static file, like images, css, client side js. So if you put `profile.png` as an image, 'serveraddress/profile.png' will load it.
@@ -34,12 +27,12 @@ to use http://expressjs.com/guide.html#view-rendering
 ##config.js##
 `config.js` is where app config info should go.
 
-##classes
+##Classes
 `classes` should store namespaces/classes of custom functions.
 
 This app comes up an example index and class
 
-##custom 404 page##
+##Custom 404 page##
 
 If you want to make a custom 404 page edit `/views/errors/404.ejs` and set `custom404` to true in `config.js`
 
@@ -53,9 +46,16 @@ if you want to have certain js files in a view, not in the `layout.ejs` then sen
 				}
 		});
 		
-##todo##
+##Todo##
 Make a css_files(just like js_files but for css)
 Make js_files and css_files a global funtion, to render in the template with one line.
 
-##license##
+##License##
 The license for this, except whats in the node_modules, is under the BSD(aka, I don't really care). I hacked this together and just putting it out in case anyone finds it useful, and for myself.
+
+##Redownload packages##
+
+This comes with the packages already to ensure that it will work out of the box. But if you really want to reinstall/download use the following, also it would be best to make a backup before doing this just to be safe.
+
+	npm install express
+	npm install ejs
