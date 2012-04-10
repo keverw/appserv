@@ -5,7 +5,8 @@ page: function (req, res, next){
 			locals: {
 				name: demo.hi(),
 				//name: 'Kevin',
-				js_files: ['foo', 'bar', 'baz']
+				js_files: ['indexonly', 'socialwidget'],
+				css_files: ['socialwidget']
 			}
 		});
 	}

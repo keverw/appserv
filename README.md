@@ -1,4 +1,4 @@
-#appserv 0.1 for node.js#
+#appserv 0.1.1 for node.js#
 
 This is a simple application server in node.js, A starting point for apps. Tested on node.js version 0.6.15
 
@@ -36,18 +36,18 @@ This app comes up an example index and class
 
 If you want to make a custom 404 page edit `/views/errors/404.ejs` and set `custom404` to true in `config.js`
 
-##Specific JS files, for a certain view##
-if you want to have certain js files in a view, not in the `layout.ejs` then send an a varable call `js_files` with an array of the js files to that view 
+##Specific JS or CSS files, for a certain view##
+if you want to have certain js files in a certain view only, not in the `layout.ejs` then send an a varable call `js_files` with an array of the js files to that view. You can also send an array to the `css_files` varable for css files.
 
 
 	res.render('index', {
 		locals: {
-					js_files: ['foo', 'bar', 'baz']
+					js_files: ['indexonly', 'socialwidget'],
+					css_files: ['socialwidget']
 				}
 		});
 		
 ##Todo##
-Make a css_files(just like js_files but for css)
 Make js_files and css_files a global funtion, to render in the template with one line.
 
 ##License##

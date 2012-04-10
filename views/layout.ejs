@@ -5,6 +5,21 @@
 		<title><?- typeof title == 'undefined' ? global.default_title : title ?></title>
 		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
 		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+		<?
+			if (css_files)
+			{
+				if (css_files.length > 0)
+				{
+					for (var i = 0; i < css_files.length; i++)
+					{
+					?>
+						<link href="assets/css/<?-css_files[i]?>.css" rel="stylesheet" type="text/css">
+					<?
+					}
+				}
+			}
+		?>
+		
 	</head>
 	<body>
 		<?- body ?>
