@@ -6,9 +6,9 @@ to start run `node app.js`
 
 This is built on top of express.js, connect and node.js
 
-##to redownload packages(if needed) use:##
+##Redownload packages##
 
-This comes with the packages already to ensure that it will work out of the box. But if you really want to reinstall/download use:
+This comes with the packages already to ensure that it will work out of the box. But if you really want to reinstall/download use the following, also it would be best to make a backup before doing this just to be safe.
 
 	npm install express
 	npm install ejs
@@ -37,7 +37,6 @@ to use http://expressjs.com/guide.html#view-rendering
 ##classes
 `classes` should store namespaces/classes of custom functions.
 
-
 This app comes up an example index and class
 
 ##custom 404 page##
@@ -49,10 +48,10 @@ if you want to have certain js files in a view, not in the `layout.ejs` then sen
 
 
 	res.render('index', {
-				locals: {
+		locals: {
 					js_files: ['foo', 'bar', 'baz']
 				}
-			});
+		});
 		
 ##todo##
 Make a css_files(just like js_files but for css)
