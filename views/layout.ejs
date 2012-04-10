@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title><?- typeof title == 'undefined' ? global.default_title : title ?></title>
+		<title><?= typeof title == 'undefined' ? global.default_title : title + ' - ' + global.default_title ?></title>
 		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
 		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
 		<?
@@ -19,7 +19,6 @@
 				}
 			}
 		?>
-		
 	</head>
 	<body>
 		<?- body ?>

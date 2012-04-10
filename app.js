@@ -1,4 +1,4 @@
-require('./globals.js');
+require('./appserv/globals.js');
 require('./config.js');
 
 global.siteurl = global.protocol + '://' + global.domain; //use this if you need to refer to the domain itself, like in a email

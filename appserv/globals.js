@@ -1,9 +1,9 @@
 global.Page = function(path) {
-	return require('./pages/'+path);
+	return require('../pages/'+path);
 }
 
 global.Class = function(path) {
-	return require('./classes/'+path);
+	return require('../classes/'+path);
 }
 
 global.error_page = function(req, res, code, msg) {
@@ -35,8 +35,7 @@ global.error_page = function(req, res, code, msg) {
 		var message = 'Unknown Server Error.';
 	}
 	
-	if (msg)
-	{
+	if (msg) {
 		message += '<br>' + msg;
 	}
 	
