@@ -10,8 +10,8 @@ This is built on top of express.js, connect and node.js
 
 This comes with the packages already to ensure that it will work out of the box. But if you really want to reinstall/download use:
 
-`npm install express
-npm install ejs`
+	npm install express
+	npm install ejs
 
 ##Static file server##
 
@@ -48,11 +48,15 @@ If you want to make a custom 404 page edit `/views/errors/404.ejs` and set `cust
 if you want to have certain js files in a view, not in the `layout.ejs` then send an a varable call `js_files` with an array of the js files to that view 
 
 
-`res.render('index', {
-			locals: {
-				js_files: ['foo', 'bar', 'baz']
-			}
-		});`
+	res.render('index', {
+				locals: {
+					js_files: ['foo', 'bar', 'baz']
+				}
+			});
 		
+##todo##
+Make a css_files(just like js_files but for css)
+Make js_files and css_files a global funtion, to render in the template with one line.
+
 ##license##
 The license for this, except whats in the node_modules, is under the BSD(aka, I don't really care). I hacked this together and just putting it out in case anyone finds it useful, and for myself.
