@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title><?- typeof title == 'undefined' ? global.default_title : title ?></title>
+		<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<?- body ?>
+		<script src="assets/js/blog.js"></script>
+		<?
+			if (js_files)
+			{
+				if (js_files.length > 0)
+				{
+					for (var i = 0; i < js_files.length; i++)
+					{
+					?>
+						<script src="assets/js/<?-js_files[i]?>.js"></script>
+					<?
+					}
+				}
+			}
+		?>
+	</body>
+</html>
