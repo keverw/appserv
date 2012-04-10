@@ -8,10 +8,10 @@ This is built on top of express.js, connect and node.js
 
 ##to redownload packages(if needed) use:##
 
+This comes with the packages already to ensure that it will work out of the box. But if you really want to reinstall/download use:
+
 `npm install express
 npm install ejs`
-
-but this comes up the packages required already.
 
 ##Static file server##
 
