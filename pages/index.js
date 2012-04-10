@@ -6,7 +6,8 @@ page: function (req, res, next){
 				name: demo.hi(),
 				//name: 'Kevin',
 				js_files: ['indexonly', 'socialwidget'],
-				css_files: ['socialwidget']
+				css_files: ['socialwidget'],
+				admin: 'yes'
 			}
 		});
 	}
