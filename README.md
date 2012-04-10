@@ -54,5 +54,5 @@ if you want to have certain js files in a view, not in the `layout.ejs` then sen
 			}
 		});`
 		
-##license##		
+##license##
 The license for this, except whats in the node_modules, is under the BSD(aka, I don't really care). I hacked this together and just putting it out in case anyone finds it useful, and for myself.
